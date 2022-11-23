@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="jquery-3.6.1.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        a{
+            text-decoration: none;
+            color: rgb(94, 109, 141);
+        }
+        button{
+            background-color: blueviolet;
+            color: chartreuse;
+        }
+        .dv1{
+            background-color: rgb(19, 20, 15);
+            width: 70%;
+            height: 30%;
+            text-align: center;
+        }
+        .ins{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(122, 97, 63);
+        }
+        ul .prt{
+            list-style-type: none;
+        }
+        .frf, .ggnf, .gnf, .prt, .blk, .gnf2, .prt2, .blk2{
+            border: 2px solid rgb(71, 68, 248);
+            padding: 10px;
+            margin: 7px;
+        }
+        .frf, .ggnf, .gnf, .prt{
+            color: rgb(150, 16, 43);
+        }
+        .dv3 * {
+            color: rgb(43, 92, 134);
+            border: 3px groove brown;
+            display: block;
+            padding: 10px;
+            margin: 8px;
+        }
+    </style>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQn+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery usage in HTML</title>
+</head>
+<body>
+    <button class="ap">Click to get Text</button>
+    <button class="ap1">Click to get Text</button>
+
+    <p id = "pr1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dolorem fugiat libero non, veniam ipsum quibusdam placeat perspiciatis? Quibusdam, sed.</p>
+
+    <button class="bk">Click to get Html</button>
+    <button class="bk1">Click to get Html</button>
+
+    <p id = "pr2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,<strong>repellendus! Nisi dolorem modi quo</strong>  reiciendis harum repellat ut, nostrum voluptate.</p>
+
+    <a href="https://jquery.com/" target = "_blank">Thisis a link to jquery website.</a>
+    <br>
+    <br>
+    <button class="ch">Click Here to get link</button>
+
+    <p><a href="https://jquery.com/" target = "_blank" id = "a2">Thisis a link to jquery website.</a></p>
+
+    <button class="ber">Click to change link</button>
+
+    <p>Your name : <input type = "text" id = "tx" value = ""></p>
+    <!-- value = "Optimus Prime"  enter it in input tag -->
+
+    <button class="dd">Click Here to get VALUE OF THE INPUT</button>
+    <button class="dd2">Click Here to get new input text</button>
+    <!-- <img src="" alt=""> -->
+
+    <p id = "pr3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolores veritatis nulla nam.</p>
+    <p id = "pr4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis assumenda quo fuga sunt alias!</p>
+    <button class="ap2">Click to add something at the end.</button>
+    <button class="ap3">Click to add something at the start.</button>
+
+    <ul class = "list">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+
+    <p id="pr5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ipsum laboriosam nam cupiditate reprehenderit id ullam. Dignissimos cum assumenda animi tempore explicabo.</p>
+    <button class="bf">Click to add before it.</button>
+    <button class="af">Click to add after it.</button>
+
+    <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, veritatis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui similique fugit dolor corrupti? Sed ex cumque incidunt ullam vero placeat.</p>
+    </div>
+    <button class = "adc">Add class to above</button>
+    <button class = "rmc">Remove class to above</button>
+    <button class = "tgc">Ek button for toggling the classes</button>
+
+    <p id = "cs1" style = "background-color: blueviolet;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ipsum saepe doloremque maiores! Adipisci odit necessitatibus, excepturi officia explicabo, in exercitationem laudantium fuga praesentium pariatur ipsa!</p>
+    <p id = "cs2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ipsum saepe doloremque maiores! Adipisci odit necessitatibus, excepturi officia explicabo, in exercitationem laudantium fuga praesentium pariatur ipsa!</p>
+    <button class="csa">Show css</button>
+    <button class="csb">Change css</button>
+
+    <div class="frf">
+        div (Fore-Father)
+        <div class="ggnf">
+            div (Great-Grand-Parent)
+            <div class="gnf">
+                div (Grand-Parent 1)
+                <ul class = "prt"> ol (Direct-Parent 1)
+                    <li class="blk">(BALAK 1) <span id = "sp1">SPAN waala BALAK 1</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gnf2">
+            div (Grand-Parent 2)
+            <ul class="prt2">
+                ul (Parent 2)
+                <li class="blk2">(BALAK 2) <span id = "sp2">SPAN waala BALAK 2</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dv3" style = "border: 5px solid rgb(77, 38, 38)">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolor perferendis voluptates quibusdam distinctio itaque, ex molestiae ratione cum libero.</p>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ut quisquam.</span>
+    </div>
+    <script>
+        $(Document).ready(function() {
+            $(".ap").click(function() {
+                alert("TeXt : " + $("#pr1").text());
+            });
+
+            $(".ap1").click(function() {
+                $("#pr1").text("This is a random text within the alert box..");
+            });
+
+            $(".bk").click(function() {
+                alert("HTmL : " + $("#pr2").html());
+            });
+
+            $(".bk1").click(function() {
+                $("#pr2").html("<p>This is me.<b>Hi User!</b> you know..</p>");
+            });
+
+            $(".ch").click(function() {
+                alert("ATTRIBUTE : " + $("a").attr("href"));
+            });
+
+            $(".ber").click(function() {
+                $("#a2").attr("href", "https://youtube.com/");
+            });
+
+            $(".dd").click(function() {
+                alert("VALUE : " + $("#tx").val());
+            });
+
+            $(".dd2").click(function() {
+                $("#tx").val("Dominic Dorretto");
+            });
+
+            $(".ap2").click(function() {
+                $("#pr3").append(" .....<strong>Some stuff </strong>to be added at the end");
+            });
+
+            $(".ap2").click(function() {
+                $(".list").append("<li>Fifth</li>");
+            });
+
+            $(".ap3").click(function() {
+                $("#pr4").prepend(" <strong> To SHURU KARTE HAI, BINA KISI.... </strong>");
+            });
+
+            $(".ap3").click(function() {
+                $(".list").prepend(" <li>Hum First</li>");
+            });
+
+            $(".bf").click(function() {
+                $("#pr5").before("<p>This is the text before the pr5 id paragraph.</p>");
+            });
+
+            $(".af").click(function() {
+                $("#pr5").after("<p>This is the text after the pr5 id paragraph.</p>");
+            })
+
+            $(".af").click(function() {
+                $("#pr5").after("This one too.");
+            })
+
+            $(".adc").click(function() {
+                $("div").addClass("dv1");
+                $("h3, p").addClass("ins");
+            });
+
+            $(".rmc").click(function() {
+                $("div").removeClass("dv1");
+                $("h3, p").removeClass("ins");
+            });
+
+            $(".tgc").click(function() {
+                $("div").toggleClass("dv1");
+                $("h3, p").toggleClass("ins");
+            });
+
+            $(".csa").click(function() {
+                alert("css background-color of cs1 : " + $("#cs1").css("background-color"));
+                alert("css background-color of cs2 : " + $("#cs2").css("background-color"));
+            });
+
+            $(".csb").click(function() {
+                $("#cs2").css("background-color", "rgb(38, 88, 25)");
+            });
+
+            $("#sp1").parent().css({
+            "padding": "auto",
+            "color": "violet",
+            "border": " 4px solid blue",
+            "margin": "10px" });
+
+            // $("#sp2").parents().css({
+            // "padding": "8px",
+            // "color": "blue",
+            // "border": " 4px ridge green",
+            // "margin": "10px" });
+            //Agar mein iss upar ke parents() function ko comments mein na rakhoon, toh yeh sabhi par likh gaye css ko chadha dega.
+
+            $("h2").siblings().css({
+            "padding": "auto",
+            "color": "darkGreen",
+            "border": " 4px solid blue",
+            "margin": "10px" });
+        });
+    </script>
+</body>
+</html>

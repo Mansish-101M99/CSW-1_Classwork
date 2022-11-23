@@ -1,0 +1,158 @@
+body {
+    /*background-color: rgba(106, 252, 106, 0.856);*/
+    color: red;
+    margin-right: 20px;
+}
+p {
+    color: black;
+    font-family: Courier;
+    padding: 10px;
+}
+#sda {
+    text-align: right;
+    color: blue;
+}
+h1, h2 {
+    font-family: Verdana;
+}
+
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 5px ridge lightseagreen;
+    
+}
+#fst {
+    background-color: lightgreen;
+}
+
+
+.p-out {
+    background-color: white;
+    border:5px black double;
+    text-align: center;
+    margin: 6px;
+    padding:7px;
+}
+p.para1 {
+    outline-style: dashed;
+    outline-color: red;
+    outline-width: thin;
+    text-align: center;
+}
+p.para2 {
+    outline-style: ridge;
+    outline-color: violet;
+    outline-width: medium;
+    text-align: left;
+}
+p.para3 {
+    outline-style: groove;
+    outline-color: blue;
+    outline-width: thick;
+    text-align: right;
+}
+p.para4 {
+    outline-style: dotted;
+    outline-color: green;
+    outline-width: thin;
+    text-align: center;
+}
+
+p.txt-stl {
+    text-align:center;
+    color: purple;
+}
+h1 {
+    text-decoration: underline;
+}
+h2 {
+    text-decoration: overline;
+}
+h3 {
+    text-decoration: line-through;
+}
+p.lo {
+    text-transform: lowercase;
+}
+p.up {
+    text-transform: uppercase;
+}
+p.cp {
+    text-transform: capitalize;
+}
+p.lp {
+    text-indent: 150px;
+    letter-spacing: 8px;
+}
+
+p.ff {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+p.ffs {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+p.nl {
+    font-style: normal;
+}
+p.it {
+    font-style: italic;
+}
+p.nl {
+    font-style: oblique;
+}
+
+a.txt-stl {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    background-color: dodgerblue;
+    padding:6px 12px;
+    text-align: left;
+    display: inline-block
+}
+a:link {
+    color:darkblue;
+    text-shadow: 2px 2px 3px yellow;
+}
+a:visited {
+    color:darkgreen;
+}
+a:hover, a:active {
+    background-color:darkgreen;
+}
+a:hover {
+    color:black;
+    text-shadow: 2px 2px 3px cyan;
+}
+a:active {
+    color:darkblue;
+}
+ul.cr {
+    list-style-type: circle;
+}
+ul.sq {
+    list-style-type: square;
+}
+ol.rm {
+    list-style-type: upper-roman;
+}
+ol.la {
+    list-style-type: lower-alpha;
+}
+
+li {
+    color:blue;
+}
+ul.img { 
+    list-style-image: url('logo-random_1_24.png');
+    padding: 0px 50px 0px 100px;
+    /*The image using this list-style-image can not be resized.*/
+}
+
+
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            .nvbar{
+                display: flex;
+                top: 0;
+                /* display: relative; */
+                padding: 5px;
+                /* margin: 3px; */
+                border-collapse:collapse;
+                /* background-color: blueviolet; */
+                background: linear-gradient(to right, orange, yellow, red, yellow, orange);
+            }
+            
+            .nvbar ul{
+                display: flex;
+                list-style-type: none;
+                flex-direction: row;
+                padding: 6px;
+                margin: 3px;
+            }
+            .nvbar li {
+                padding: 4px;
+            }
+            .nvbar li a {
+                text-decoration: none;
+                display: block;
+                justify-content: center;
+                background-color: azure;
+                padding: 18px;
+                margin: 7px;
+                color: rgb(59, 29, 29);
+                /* align-items: center; */
+                text-align: center;
+                font-size: 20px;
+            }
+            .nvbar li a:hover {
+                background-color: crimson;
+                color: rgb(183, 255, 213);
+            }
+            #home{
+                margin: auto;
+                height: 40%;
+                text-shadow: 2px 2px 5px rgb(247, 230, 230);
+                /* background-image: url("https://c8.alamy.com/comp/2A00Y52/berlin-germany-18th-sep-2019-parcels-travel-on-a-conveyor-belt-through-the-parcel-centre-of-deutsche-post-and-dhl-credit-tom-wellerdpaalamy-live-news-2A00Y52.jpg");
+                background-repeat: no-repeat;
+                background-size: 1500px 1000px; */
+                position: relative; 
+                display: inline-block; 
+                /* background: linear-Gradient(to right, skyBlue, rgb(103, 103, 170)); */
+            }
+            #home p {
+                font-size: 24px;
+            }
+            .hm{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .hmbox{
+                height: 100px;
+                width: 100px;
+                padding: 5px;
+                margin: 10px;
+                float:right;
+                position: relative;
+                width: calc(50% - 10px);
+            }
+            .hmbox:hover{
+                width: auto;
+                height: auto;
+                background-color: black;
+                
+            }
+            .hmbox h3{
+                text-align: center;
+                background-color: blueviolet;
+            }
+        </style>
+
+        <title>Random website 1</title>
+    </head>
+    <body>
+        <div class = "nvbar">
+            <a href="Random1.html"> <img src="	https://seeklogo.com/images/L/Lorem_Ipsum-logo-1662AFAE6D-seeklogo.com.png" alt="Our website" style = "width:150px; height:70px; padding: 10px;"> </a>
+            <div>
+                <ul >
+                    <li><a href = "#home" target = "_self">HOME</a></li>
+                    <li><a href = "#blog" target = "_self">BLOG</a></li>
+                    <li><a href = "#room" target = "_self">ROOM</a></li>
+                    <li><a href = "#contacts" target = "_self">CONTACTS</a></li>
+                    <li><a href = "#about" target = "_self">ABOUT</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href = "#signup" target = "_self">SIGN UP</a></li>
+                    <li><a href = "#signin" target = "_self">SIGN IN</a></li>
+                    <li> <img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="Profile Photo" style = "width:70px; height:70px;"> </li>
+                </ul>
+            </div>
+        </div> 
+        <div id="home">
+            <h1 style = "text-shadow: 2px 2px 5px rgb(247, 230, 230);">LOREM IPSUM AND CO.</h1>
+            <p>We are here at your service. We are the world leading service provider for blah blah blah.</p>
+            <div class = "hm">
+
+                <div class = "hmbox">
+                    <img src="https://d2kh7o38xye1vj.cloudfront.net/wp-content/uploads/2021/10/banner-tracking.png" alt="Tracking" style = "width: 300px; height: 190px;">
+                    <h3>Tracking</h3>
+                </div>
+                <div class="hmbox">
+                    <img src="	https://image.shutterstock.com/image-vector/shopping-cart-check-mark-icon-260nw-1708233319.jpg" alt="Order" style = "width: 230px; height: 196px;">
+                    <h3>Order</h3>
+                </div>
+                <div class="hmbox">
+                    <img src="https://cdn.pixabay.com/photo/2016/09/16/19/19/online-store-1674907__340.png" alt="Store" style = "width: 260px; height: 200px;">
+                    <h3>Store</h3>
+                </div>
+            </div>
+            
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

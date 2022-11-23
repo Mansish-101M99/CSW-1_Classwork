@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: linear-gradient(to left, pink, yellow, pink, white, pink, yellow, pink, white);
+            }
+            img {
+                display: block;
+                margin: 40px auto 40px auto;
+                margin-left: auto;
+                width: 37vh;
+                height: 40vh;
+                background-color: lightGreen;
+                padding: 40px;
+                border-radius: 10px;
+            }
+            h1 {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                align-items: center;
+                width: 70%;
+                justify-content: center;
+                font-size: 50px;
+                padding: 20px;
+                background-color: lightGreen;
+                text-align: center;
+                color: red;
+                text-shadow: 2px 1px 4px darkgreen;
+                font-family: sans-serif;
+                border-radius: 15px;
+            }
+            p {
+                display: block;
+                background-color: lightGreen;
+                text-align: center;
+                font-family: sans-serif;
+                padding: 10px;
+                border-radius: 3px;
+            }
+            input[type=text], input[type=number],
+            select {
+                width: 100%;
+                padding: 10px 16px;
+                margin: 6px 0;
+                display: inline-block;
+                border: 2px solid blue;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type=submit] {
+                width: 100%;
+                background-color: blue;
+                color: yellow;
+                padding: 12px 16px;
+                margin: 6px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: green;
+                color: yellow;
+            }
+
+            div.frm {
+                border-radius: 3px;
+                background-color: lightGreen;
+                padding: 15px;
+            }
+        </style>
+        <meta = "Charset UTF-8">
+    </head>
+    <body>
+        <h1> Patient Registration :- </h1>
+        <img src = "download1.png">
+        <div class="frm">
+        <form action="">
+            <label for="Pt"> Patient details :- </label>
+            <input type="text" id="pt" name="Patient Name" placeholder="Your-Name-">
+            <label for="Ist">Issue Type :- </label>
+            <input type="text" id="Ist" name="Issue Type" placeholder="Patient-Anomalie-">
+            <label for="paty">Patient-type :- </label>
+            <select name="paty" id="paty">Enter-the-patient-type-
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="boy">Boy</option>
+                <option value="girl">Girl</option>
+                <option value="Abv-M">Senior-citizen-male</option>
+                <option value="Abv-f">Senior-citizen-female</option>
+            </select>
+            <label for="age">Age :- </label>
+            <input type="number" id="age" name="Age" placeholder="Age-">
+            <input type="submit" value="Confirm">
+        </form>
+    </div>
+    </body>
+</html>

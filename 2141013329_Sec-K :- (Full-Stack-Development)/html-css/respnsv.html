@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+
+    <style>
+        body {
+            background: linear-gradient(to right, red, green, orange, yellow, blue);
+            /* border:1px solid black; */
+            padding: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 11px;
+        }
+
+        tr:nth-child(even) {
+            background-color: DodgerBlue;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(30, 255, 188);
+        }
+
+        div.s {
+            position: static;
+            border: 3px ridge rgb(183, 183, 255);
+            font-size: 20px;
+        }
+
+        div.rel {
+            position: relative;
+            right: 10px;
+            bottom: 13px;
+            left: 9px;
+            font-size: 20px;
+            border: 3px ridge rgb(255, 193, 193);
+        }
+
+        div.fx {
+            position: fixed;
+            font-size: 20px;
+            right: 30px;
+            bottom: 0;
+            left: 400px;
+            width: 500px;
+            height: 200px;
+            border: 4px groove rgb(195, 255, 195);
+            background-color: brown;
+        }
+
+        div.abs {
+            position: absolute;
+            border: 2px outset grey;
+            background-color: aliceblue;
+        }
+
+        div.st {
+            position: sticky;
+            top: 0;
+            right: 0;
+            background-color: bisque;
+            border: 2px inset blueviolet;
+            padding: 3px;
+        }
+
+        div.nav {
+            position: relative;
+            height: 180px;
+        }
+
+        ul {
+            background-color: slateblue;
+            list-style-type: none;
+            width: 70%;
+            padding: 5px;
+            overflow: hidden;
+            height: 170px;
+        }
+
+        li {
+            float: inline-start;
+            padding: 6px;
+        }
+
+        li a {
+            display: block;
+            background-color: bisque;
+            padding: 5px 10px;
+        }
+
+        li a:hover {
+            background-color: brown;
+            color: beige;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 10px 16px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 3px solid blue;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: orange;
+            color: rgb(46, 36, 36);
+            padding: 12px 16px;
+            margin: 6px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: green;
+        }
+
+        div.frm {
+            border-radius: 3px;
+            background-color: rgb(252, 252, 121);
+            padding: 15px;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <title>Responsive Website example 1</title>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="nav">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#contacts">CONTACTS</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#vision">VISION</a></li>
+        </ul>
+    </div>
+
+
+    <h2>Responsiveness in the Table</h2>
+    <p>When the screen becomes small, this table can resize according and even add a scrollbar so users can read the
+        complete information.</p>
+    <div style="overflow-x: auto;">
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Roll No</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Tim</td>
+                <td>01</td>
+                <td>50</td>
+                <td>60</td>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+                <td>50</td>
+                <td>60</td>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Steve</td>
+                <td>02</td>
+                <td>55</td>
+                <td>65</td>
+                <td>75</td>
+                <td>85</td>
+                <td>95</td>
+                <td>55</td>
+                <td>65</td>
+                <td>75</td>
+                <td>85</td>
+                <td>95</td </tr>
+            <tr>
+                <td>Cory</td>
+                <td>03</td>
+                <td>72</td>
+                <td>82</td>
+                <td>72</td>
+                <td>82</td>
+                <td>62</td>
+                <td>52</td>
+                <td>92</td>
+                <td>62</td>
+                <td>72</td>
+                <td>92</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="st">
+        <h2>Sticky Example</h2>
+        <p>This is an example of sticky ppositioning of element..Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.et!</p>
+    </div>
+    <hr>
+    <h2>Static Example</h2>
+    <div class="s">This is an exmple of static example..</div>
+    <hr>
+    <h2>Relative Example</h2>
+    <div class="rel">This given text is in relative positioning ..</div>
+    <!-- <positioning class=""></positioning> -->
+    <hr>
+    <div class="frm">
+        <form action="">
+            <label for="Emp">Employee Name</label>
+            <input type="text" id="emp" name="Employee name" placeholder="Your-Name-">
+            <label for="Dept">Department</label>
+            <input type="text" id="Dept" name="Department" placeholder="Your-Department-">
+            <label for="city">City</label>
+            <select name="City" id="city">Enter-City-
+                <option value="Houston">Houston</option>
+                <option value="SanFrancisco">SanFrancisco</option>
+                <option value="Tampa">Tampa</option>
+            </select>
+            <input type="submit" value="Confirm">
+        </form>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eum quia culpa quod nam asperiores doloremque
+        beatae natus a quae numquam doloribus officiis, earum rerum alias incidunt, aliquam tempore modi atque! Eum
+        inventore doloribus ut eos id harum veniam, corporis error ducimus, necessitatibus adipisci. Quis quasi aperiam
+        inventore est vero temporibus, vitae laboriosam voluptatem quisquam eum nostrum ipsum. Quam ea sed esse fugiat
+        repellat aspernatur accusamus dolores repudiandae voluptates eveniet animi aperiam nostrum fugit laboriosam
+        ullam labore, cumque molestias. Corrupti animi magni incidunt quisquam doloribus maxime facere. Enim fuga
+        doloribus velit, repellat veniam quaerat eveniet dignissimos a, nostrum nemo quisquam.</p>
+    <h2>Fixed Example</h2>
+    <div class="fx">
+        <p>This given text is an example of fixed positioned element..</p>
+        <div class="abs">
+            <h3>Absolute Example</h3>
+            <p>This given text is in absolute position..</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa ipsum ipsam porro dolorum explicabo veniam
+        magni optio, consequuntur modi odio cumque quibusdam voluptate suscipit distinctio! Quam ab, iure corrupti,
+        illum quo delectus aspernatur ipsam necessitatibus quidem rem saepe ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia aspernatur facere dolor quaerat illum!
+        Totam tempore omnis reiciendis hic, officiis harum porro eos dolore deserunt, voluptatem quo amet! Ut voluptas
+        laudantium, optio minus accusantium sapiente temporibus consectetur aliquam vel asperiores! Optio quia quos non
+        quidem, ducimus perferendis nulla? Aspernatur?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi suscipit obcaecati praesentium vero perspiciatis
+        ipsam quae dolores ipsa quaerat. Assumenda voluptatum, commodi, aspernatur quidem consequatur delectus eaque
+        expedita consequuntur vitae quis nam reiciendis amet suscipit, a ratione. Placeat inventore doloremque suscipit,
+        vel vero minus praesentium laudantium nostrum ratione error id consequatur incidunt? Quo, iusto. Culpa nihil
+        quod vitae magni amet fugit libero nostrum perferendis dignissimos sed ad beatae, atque non qui voluptas
+        accusamus voluptates tempora illum veniam, magnam eligendi sequi sapiente laudantium! Exercitationem iusto
+        reprehenderit eius voluptas ipsa dolor quos.</p>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
